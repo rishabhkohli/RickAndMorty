@@ -1,0 +1,10 @@
+query GetCharactersByIds($ids: [ID!]!) {
+    charactersByIds(ids: $ids) {
+        id
+        name
+        gender
+        species
+        status
+        type
+    }
+}
