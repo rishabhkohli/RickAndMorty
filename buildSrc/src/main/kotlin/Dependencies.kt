@@ -42,5 +42,10 @@ object Dependencies {
 			const val hilt = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.AndroidX.hilt}"
 			const val compiler = "androidx.hilt:hilt-compiler:${Versions.AndroidX.hilt}"
 		}
+
+		object Navigation {
+			const val fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.AndroidX.navigation}"
+			const val ui = "androidx.navigation:navigation-ui-ktx:${Versions.AndroidX.navigation}"
+		}
 	}
 }

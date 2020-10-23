@@ -39,6 +39,7 @@ android {
 
 	buildFeatures {
 		compose = true
+		viewBinding = true
 	}
 
 	composeOptions {
@@ -57,6 +58,9 @@ dependencies {
 	implementation(Dependencies.AndroidX.lifecycle)
 	implementation(Dependencies.AndroidX.viewmodel)
 	implementation(Dependencies.AndroidX.lifecycleCommonJava8)
+
+	implementation(Dependencies.AndroidX.Navigation.fragment)
+	implementation(Dependencies.AndroidX.Navigation.ui)
 
 	implementation(Dependencies.material)
 
