@@ -65,6 +65,7 @@ dependencies {
 	implementation(Dependencies.material)
 
 	implementation(project(Modules.network))
+	implementation(project(Modules.entities))
 
 	implementation("androidx.compose.ui:ui:${Versions.compose}")
 	implementation("androidx.compose.material:material:${Versions.compose}")

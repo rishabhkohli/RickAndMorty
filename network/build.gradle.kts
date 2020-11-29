@@ -51,4 +51,6 @@ dependencies {
 
 	implementation(Dependencies.Apollo.runtime)
 	implementation(Dependencies.Apollo.coroutines)
+
+	implementation(project(Modules.entities))
 }
