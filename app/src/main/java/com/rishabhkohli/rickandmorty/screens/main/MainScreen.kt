@@ -17,7 +17,7 @@ import androidx.ui.tooling.preview.Preview
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() {
+private fun DefaultPreview() {
 	MainScreen(actioner = {})
 }
 
@@ -37,7 +37,7 @@ fun MainScreen(actioner: (MainAction) -> Unit) {
 }
 
 @Composable
-fun OptionCard(text: String, onClick: () -> Unit) {
+private fun OptionCard(text: String, onClick: () -> Unit) {
 	Card(
 		modifier = Modifier
 			.weight(1f)
