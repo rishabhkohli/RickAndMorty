@@ -43,6 +43,7 @@ android {
 
 apollo {
 	generateKotlinModels.set(true)
+	generateAsInternal.set(true)
 }
 
 dependencies {

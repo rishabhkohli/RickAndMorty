@@ -9,17 +9,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.ui.tooling.preview.Preview
-import com.rishabhkohli.rickandmorty.entities.Character
+import com.rishabhkohli.rickandmorty.entities.PartialCharacter
 
 
 @Preview(showBackground = true)
 @Composable
 private fun DefaultPreview() {
-	CharactersListScreen(listOf("ABC", "DEF", "GHI").map { Character(it) }, actioner = {})
+	CharactersListScreen(emptyList(), actioner = {})
 }
 
 @Composable
-fun CharactersListScreen(characters: List<Character>, actioner: (CharactersListAction) -> Unit) {
+fun CharactersListScreen(characters: List<PartialCharacter>, actioner: (CharactersListAction) -> Unit) {
 	LazyColumnFor(
 		items = characters,
 		modifier = Modifier
@@ -31,7 +31,7 @@ fun CharactersListScreen(characters: List<Character>, actioner: (CharactersListA
 }
 
 @Composable
-private fun characterItem(character: Character) {
+private fun characterItem(character: PartialCharacter) {
 	Text(
 		text = character.name,
 		modifier = Modifier.fillMaxWidth()
