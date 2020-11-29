@@ -7,5 +7,17 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.rishabhkohli.rickandmorty.screens.main.MainFragment"
-        android:label="MainFragment" />
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_charactersListFragment"
+            app:destination="@id/charactersListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/charactersListFragment"
+        android:name="com.rishabhkohli.rickandmorty.screens.characterslist.CharactersListFragment"
+        android:label="CharactersListFragment" />
 </navigation>
