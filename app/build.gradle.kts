@@ -4,13 +4,12 @@ plugins {
 }
 
 android {
-	compileSdkVersion(29)
-	buildToolsVersion = "29.0.3"
+	compileSdkVersion(30)
 
 	defaultConfig {
 		applicationId = "com.rickandmorty"
 		minSdkVersion(23)
-		targetSdkVersion(29)
+		targetSdkVersion(30)
 		versionCode = 1
 		versionName = "1.0"
 	}
@@ -55,6 +54,7 @@ dependencies {
 
 	implementation(Dependencies.AndroidX.appcompat)
 	implementation(Dependencies.AndroidX.core)
+	implementation(Dependencies.AndroidX.fragment)
 	implementation(Dependencies.AndroidX.lifecycle)
 	implementation(Dependencies.AndroidX.viewmodel)
 	implementation(Dependencies.AndroidX.lifecycleCommonJava8)
