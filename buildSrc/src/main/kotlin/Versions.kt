@@ -1,9 +1,9 @@
 object Versions {
-	const val gradle_build_tools = "4.1.0-rc03"
+	const val gradle_build_tools = "4.2.0-alpha16"
 	const val apollo = "2.4.0"
 	const val kotlin = "1.4.0"
 	const val dagger = "2.29.1"
-	const val compose = "1.0.0-alpha01"
+	const val compose = "1.0.0-alpha07"
 	const val google_services = "4.3.3"
 	const val hilt = "2.28-alpha"
 
