@@ -1,5 +1,5 @@
 object Versions {
-	const val gradle_build_tools = "4.2.0-alpha16"
+	const val gradle_build_tools = "4.2.0-beta02"
 	const val apollo = "2.4.0"
 	const val kotlin = "1.4.0"
 	const val dagger = "2.29.1"
