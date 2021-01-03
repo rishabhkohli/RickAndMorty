@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 
-abstract class BaseComposeFragment : Fragment() {
+abstract class ComposeFragment : Fragment() {
 
-	final override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
+	final override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View =
 		ComposeView(requireContext())
 
 	final override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

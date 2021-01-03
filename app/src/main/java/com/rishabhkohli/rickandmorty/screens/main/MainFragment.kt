@@ -5,10 +5,10 @@ import android.widget.Toast
 import androidx.compose.ui.platform.ComposeView
 import androidx.navigation.fragment.findNavController
 import com.rishabhkohli.rickandmorty.R
-import com.rishabhkohli.rickandmorty.screens.BaseComposeFragment
+import com.rishabhkohli.rickandmorty.screens.ComposeFragment
 import com.rishabhkohli.rickandmorty.ui.RickAndMortyTheme
 
-class MainFragment : BaseComposeFragment() {
+class MainFragment : ComposeFragment() {
 
 	override fun onViewCreated(composeView: ComposeView, savedInstanceState: Bundle?) {
 		composeView.setContent {
