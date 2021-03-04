@@ -29,6 +29,10 @@ android {
 	tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 		kotlinOptions.jvmTarget = "1.8"
 		kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+
+		// Allow compose to work with newer version of Kotlin
+		kotlinOptions.freeCompilerArgs += "-P"
+		kotlinOptions.freeCompilerArgs += "plugin:androidx.compose.compiler.plugins.kotlin:suppressKotlinVersionCompatibilityCheck=true"
 	}
 
 	kotlinOptions {
@@ -43,7 +47,7 @@ android {
 
 	composeOptions {
 		kotlinCompilerExtensionVersion = Versions.compose
-		kotlinCompilerVersion = "1.4.0"
+//		kotlinCompilerVersion = Versions.kotlin
 	}
 }
 
@@ -67,7 +71,7 @@ dependencies {
 	implementation(project(Modules.network))
 	implementation(project(Modules.entities))
 
-	implementation("androidx.compose.ui:ui:${Versions.compose}")
-	implementation("androidx.compose.material:material:${Versions.compose}")
-	implementation("androidx.ui:ui-tooling:${Versions.compose}")
+	implementation(Dependencies.AndroidX.Compose.ui)
+	implementation(Dependencies.AndroidX.Compose.material)
+	implementation(Dependencies.AndroidX.Compose.tooling)
 }

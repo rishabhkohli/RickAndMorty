@@ -47,5 +47,11 @@ object Dependencies {
 			const val fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.AndroidX.navigation}"
 			const val ui = "androidx.navigation:navigation-ui-ktx:${Versions.AndroidX.navigation}"
 		}
+
+		object Compose {
+			const val ui = "androidx.compose.ui:ui:${Versions.compose}"
+			const val material = "androidx.compose.material:material:${Versions.compose}"
+			const val tooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
+		}
 	}
 }

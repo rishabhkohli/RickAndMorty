@@ -7,10 +7,9 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.TextUnit
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 
 
 @Preview(showBackground = true)
@@ -43,11 +42,11 @@ private fun ColumnScope.OptionCard(text: String, onClick: () -> Unit) {
 			.clickable(onClick = onClick),
 		elevation = 10.dp
 	) {
-		Box(alignment = Alignment.Center) {
+		Box {
 			Text(
 				text = text,
-				fontSize = TextUnit.Sp(value = 20),
-				textAlign = TextAlign.Center
+				fontSize = 20.sp,
+				modifier = Modifier.align(Alignment.Center)
 			)
 		}
 	}
