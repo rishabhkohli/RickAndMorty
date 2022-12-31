@@ -24,7 +24,7 @@ fun CharactersListScreen(characters: List<PartialCharacter>, actioner: (Characte
 	LazyColumn(
 		modifier = Modifier
 			.fillMaxSize()
-			.padding(8.dp)
+			.padding(16.dp)
 	) {
 		items(characters) {
 			CharacterItem(character = it)
